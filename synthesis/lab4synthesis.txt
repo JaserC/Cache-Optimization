@@ -1,0 +1,74 @@
+*****************************
+* Lab 4 Synthesis Questions *
+*****************************
+Name(s):  
+NetID(s): 
+
+1) Instructions in the nested loops that access memory
+   lab0.d:    18
+   List of instructions for lab0.d:
+	
+   mov    %rax,-0x30(%rbp)
+   movl   $0x0,-0x14(%rbp)
+   movl   $0x0,-0x18(%rbp)
+   movl   $0x0,-0x1c(%rbp)
+   mov    -0x14(%rbp),%edx
+   mov    -0x18(%rbp),%eax
+   mov    -0x1c(%rbp),%edx
+   mov    -0x18(%rbp),%ecx
+   mov    -0x14(%rbp),%eax
+   mov    -0x28(%rbp),%rax
+   mov    -0x1c(%rbp),%edx
+   mov    %edx,(%rax)
+   addl   $0x1,-0x1c(%rbp)
+   cmpl   $0x1f3,-0x1c(%rbp)
+   addl   $0x1,-0x18(%rbp)
+   cmpl   $0x1f3,-0x18(%rbp)
+   addl   $0x1,-0x14(%rbp)
+   cmpl   $0x1f3,-0x14(%rbp)
+
+   lab0opt.d: 1
+   List of instructions for lab0opt.d:
+   
+   mov    %ecx,(%rsi,%rdx,4)
+-----------------------------------------------------------
+2) Where are the loop variables stored in lab0.d:
+   i: -0x14(%rbp)
+   j: -0x18(%rbp)
+   k: -0x1c(%rbp)
+
+i is stored 20 bytes below the base pointer, j is stored 24 bytes below the base pointer, and j i stored 28 bytes below the base pointer.
+-----------------------------------------------------------
+3) Corresponding values in lab0opt.d:
+   %edx: int k
+   %ecx: i + j + k
+-----------------------------------------------------------
+1) Instructions in the nested loops that access memory
+   lab0.d:    <count>
+   List of instructions for lab0.d:
+
+   lab0opt.d: <count>
+   List of instructions for lab0opt.d:
+
+-----------------------------------------------------------
+2) Where are the loop variables stored in lab0.d:
+   i: 
+   j: 
+   k: 
+-----------------------------------------------------------
+3) Corresponding values in lab0opt.d:
+   %edx: 
+   %ecx: 
+-----------------------------------------------------------
+4) Effect on number of misses:
+
+   Explain:
+
+
+-----------------------------------------------------------
+5) Effect on number of misses:
+
+   Explain:
+
+
+-----------------------------------------------------------
